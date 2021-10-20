@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<h1>Hola Heroe</h1>
+<dl>
+
+
+<span>Nombre</span>
+<h5>{{nombre}}</h5>
+<span>Edad</span>
+<h5>{{edad}}</h5>
+
+<h5>Funcion</h5>
+<p>{{obtenerNombre()}}</p>
+<h5>Nombre Capitalizado</h5>
+<p>{{nombreCapitalizado}}</p>
+
+</dl>
+<div class="d-flex">
+<button class="btn btn-success"
+(click)="cambiarNombre()"> Cambiar Heroe</button>
+
+<button class="btn btn-success"
+(click)="cambiarEdad()"> Cambiar Edad</button>
+</div>
