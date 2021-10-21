@@ -1,0 +1,17 @@
+<p>Listado Heroes!</p>
+
+<div ngif=" heroeBorrado !=='' ; else elseBlock" >
+    <h3> Heroe Borrado:<small>{{heroeBorrado}}</small></h3>
+</div>
+<ng-template #elseBlock>
+     <small>No borraste nada...Animate!</small>
+</ng-template>
+
+<button ngif=" heroes.length !==0"(click)="borrarHeroe()">Borrar Heroe</button>
+
+    <ul class="list-group">
+        <li *ngFor="let heroe of heroes; let i=index;"
+        >{{i +1}} {{heroe}}</li>
+        
+    </ul> 
+   
